@@ -5,7 +5,7 @@ app = Flask('recorder')
 
 @app.route('/')
 def home():
-    path = 'static/render - start command.png'
+    path = 'render - start command.png'
     # return send_file(path)
     url = url_for('static', filename='render - start command.png')
     return url
